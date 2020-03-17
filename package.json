@@ -1,6 +1,6 @@
 {
   "name": "electron-update",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -10,17 +10,10 @@
   },
   "build": {
     "asar": false,
-    "appId": "com.test.update-test",
     "linux": {
       "target": [
         "AppImage"
       ]
-    },
-    "publish": {
-      "provider": "github",
-      "owner": "mitoconcrete",
-      "repo": "update_test2",
-      "publishAutoUpdate": true
     },
     "directories": {
       "buildResources": "resources/installer/",
