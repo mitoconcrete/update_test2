@@ -1,6 +1,6 @@
 {
   "name": "update-test2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -39,6 +39,7 @@
     "electron-builder": "^22.4.1"
   },
   "dependencies": {
+    "electron-log": "^4.1.0",
     "electron-updater": "^4.2.5"
   }
 }

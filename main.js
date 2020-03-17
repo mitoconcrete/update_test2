@@ -1,6 +1,9 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow, ipcMain } = require("electron");
 const { autoUpdater } = require("electron-updater");
+const log = require("electron-log");
+log.transports.file.level = "debug";
+autoUpdater.logger = log;
 const path = require("path");
 
 console.log(autoUpdater.checkForUpdatesAndNotify());
